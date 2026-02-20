@@ -12,7 +12,7 @@
 
 ## 🚀 使い方
 
-1. [**こちらから遊ぶ →**](https://oboayakoe.github.io/darts/)
+1. [**こちらから遊ぶ →**](https://obofam.github.io/darts/)
 2. 「投げる！」ボタンを押す
 3. ルーレットが回って…今日の目的地が決定！
 
