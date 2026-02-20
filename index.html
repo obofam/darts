@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ダーツの旅 — 今日はどこへ？</title>
+  <meta name="description" content="日本全国の市区町村からランダムにダーツで行き先を決める！所さん風ダーツの旅を再現。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-particles" id="bgParticles"></div>
+
+  <div class="container">
+    <header>
+      <h1>ダーツの旅</h1>
+      <p class="subtitle">日本全国 今日はどこへ？</p>
+    </header>
+
+    <div class="board-container">
+      <div class="dart-board" id="dartBoard">
+        <div class="board-ring ring-1"></div>
+        <div class="board-ring ring-2"></div>
+        <div class="board-ring ring-3"></div>
+        <div class="board-ring ring-4"></div>
+        <div class="board-crosshair ch-h"></div>
+        <div class="board-crosshair ch-v"></div>
+        <div class="board-center">
+          <div class="roulette-display" id="rouletteDisplay">
+            <span class="roulette-pref" id="roulettePref"></span>
+            <span class="roulette-city" id="rouletteCity">🎯</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="throw-btn" id="throwBtn" aria-label="ダーツを投げる">
+      <span class="btn-text">投げる！</span>
+    </button>
+
+    <div class="result-panel" id="resultPanel">
+      <div class="result-content">
+        <div class="result-label">🎯 今日の目的地は…</div>
+        <div class="result-pref" id="resultPref"></div>
+        <div class="result-city" id="resultCity"></div>
+        <div class="result-pop" id="resultPop"></div>
+        <a class="result-map-link" id="resultMapLink" href="#" target="_blank" rel="noopener">
+          📍 Google Maps で見る
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-text">全国 <span id="totalCount">0</span> 市区町村から人口加重抽選</p>
+    </footer>
+  </div>
+
+  <script src="municipalities.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
